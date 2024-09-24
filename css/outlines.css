@@ -15,7 +15,6 @@
     src: url(/fonts/GothamSSm-Light.otf);
 }
 
-
 header {
     text-align: left;
     color: white;
@@ -24,11 +23,16 @@ header {
     padding: 50px;
     background: #584a3d;
     box-sizing: border-box;
+    top: 0;
+    z-index: 1;
+    position: sticky;
+    border-bottom: 5px solid #cec6ba;
+    width: 100%;
 }
 
 .header__container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -41,6 +45,7 @@ header {
 .header__item {
     display: inline-block;
     margin-right: 20px;
+    /*padding-bottom: 20px;*/
 }
 
 .header__title {
@@ -82,6 +87,7 @@ main {
     margin: 50px;
     padding: 50px;
     border-radius: 5px;
+    flex-direction: column;
 }
 
 .main__block__title{
@@ -187,4 +193,64 @@ article.main__block__text {
     text-align: center;
     font-size: 20px;
     font-family: Gotham-Ultra-Light, serif;
+}
+
+@media screen and (max-width: 650px) {
+
+    .header__list {
+        display: none;
+    }
+
+    .review {
+        flex-basis: 100%;
+        font-size: calc(10px + 2vw);
+        text-align: center;
+        margin: 1rem auto;
+        padding: 1rem;
+    }
+
+    .reviews {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+    }
+
+    h2.main__block__title,
+    h4.main__block__title {
+        font-size: calc(10px + 5vw);
+        text-align: center;
+        margin: 0 auto;
+    }
+
+
+    p.main__block__text,
+    aside.main__block__text,
+    .main__block__item,
+    article.main__block__text {
+        font-size: calc(10px + 2vw);
+    }
+
+    h3.main__block__city {
+        font-size: calc(10px + 4vw);
+    }
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    section.main__block {
+        display: -ms-flexbox;
+        margin: 1rem auto;
+        padding: 2rem;
+    }
+
+    img.main__block__img {
+        display: none;
+    }
+
+    main {
+        padding: 0 1rem;
+    }
 }
