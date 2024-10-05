@@ -1,3 +1,6 @@
+header {
+
+}
 @font-face {
     font-family: Gotham-Ultra;
     src: url(/fonts/Gotham-Ultra.otf);
@@ -90,15 +93,15 @@ main {
     flex-direction: column;
 }
 
-.main__block__title{
+.block__title{
     color: white;
     text-align: left;
     font-size: 50px;
     font-family: Gotham-Ultra, serif;
-
+    text-transform: uppercase;
 }
 
-.main__block__text {
+.block__text {
     color: white;
     text-align: left;
     font-size: 25px;
@@ -106,43 +109,43 @@ main {
     max-width: 800px
 }
 
-.main__block__list {
+.block__list {
 
 }
 
-.main__block__item {
+.block__item {
     padding: 10px;
     list-style: disc;
     font-family: Gotham-Ultra-Light, serif;
     flex: 1;
 }
 
-.main__block__list > .main__block__item:nth-child(3) {
+.block__list > .block__item:nth-child(3) {
     margin-bottom: 20px;
 }
 
-.main__block__list > .main__block__item:nth-child(3) ul {
+.block__list > .block__item:nth-child(3) ul {
     padding-left: 20px;
     list-style-type: circle;
     margin-top: 10px;
 }
 
-.main__block__list > .main__block__item:nth-child(3) ul li {
+.block__list > .block__item:nth-child(3) ul li {
     font-style: italic;
     margin-bottom: 5px;
     padding-left: 10px;
 }
 
-.main__block__city {
+.block__city {
     text-align: center;
     font-size: 40px;
 }
 
-.main__block__link {
+.block__link {
     color: #cec6ba;
 }
 
-.main__block__img {
+.block__img {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -179,11 +182,11 @@ main {
     font-family: Gotham-Ultra-Light, serif;
 }
 
-h4.main__block__title {
+h4.block__title {
     text-align: center;
 }
 
-article.main__block__text {
+article.block__text {
     text-align: center;
     max-width: 800px;
     margin: 0 auto;
@@ -255,22 +258,22 @@ article.main__block__text {
 
     }
 
-    h2.main__block__title,
-    h4.main__block__title {
+    h2.block__title,
+    h4.block__title {
         font-size: calc(10px + 5vw);
         text-align: center;
         margin: 0 auto;
     }
 
 
-    p.main__block__text,
-    aside.main__block__text,
-    .main__block__item,
-    article.main__block__text {
+    p.block__text,
+    aside.block__text,
+    .block__item,
+    article.block__text {
         font-size: calc(10px + 2vw);
     }
 
-    h3.main__block__city {
+    h3.block__city {
         font-size: calc(10px + 4vw);
     }
     header {
@@ -279,13 +282,13 @@ article.main__block__text {
         justify-content: center;
     }
 
-    section.main__block {
+    section.block {
         display: -ms-flexbox;
         margin: 1em auto;
         padding: 2em;
     }
 
-    img.main__block__img {
+    img.block__img {
         display: none;
     }
 
