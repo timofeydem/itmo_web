@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лист ожидания</title>
+  <link rel="stylesheet" href="css/outlines.css">
+  <script src="scripts/menu.js" defer></script>
+  <script src="scripts/waitlist.js" defer></script>
+</head>
+<body>
+<header class="header">
+  <div class="header__container">
+    <nav class="header__nav">
+      <ul class="header__list">
+        <li class="header__item"><a href="catalog.html">Каталог Товаров</a></li>
+        <li class="header__item"><a href="contacts.html">Контакты</a></li>
+        <li class="header__item"><a href="reviews.html">Отзывы Покупателей</a></li>
+        <li class="header__item"><a href="waitlist.html">Лист ожидания</a></li>
+      </ul>
+    </nav>
+    <h1 class="header__title"><a href="index.html">Apple Devices</a></h1>
+  </div>
+</header>
+<main>
+  <section class="main__block">
+    <h2 class="block__title">Добавьте позицию в лист ожидания</h2>
+    <form id="waitlistForm" class="form">
+      <label for="name">Имя клиента:</label>
+      <input type="text" id="name" class="form__input" required>
+
+      <label for="position">Позиция:</label>
+      <input type="text" id="position" class="form__input" required>
+
+      <button class="form__button">Добавить</button>
+    </form>
+  </section>
+  <section class="main__block">
+    <h2 class="block__title">Ваш лист ожидания</h2>
+    <div id="waitlistTable" class="table-container"></div>
+  </section>
+</main>
+<footer><h5 class="footer__text">ОРГНИП 324665800153826</h5></footer>
+</body>
+</html>
