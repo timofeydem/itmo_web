@@ -340,6 +340,43 @@ article.block__text {
     animation: fadeInOut 1.5s infinite;
 }
 
+.product-slider {
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #f9f9f9;
+    border: 1px solid #cec6ba;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.product-item {
+    text-align: center;
+    font-family: Gotham-Ultra-Light, serif;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.product-item h3 {
+    font-size: 24px;
+    color: #333;
+}
+
+.product-item p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.slick-prev:before {
+    content: "<";
+    color: #cec6ba;
+    font-size: 30px;
+}
+
+.slick-next:before {
+    content: ">";
+    color: #cec6ba;
+    font-size: 30px;
+}
 @keyframes fadeInOut {
     0%, 100% {
         opacity: 0.2;

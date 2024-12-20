@@ -8,7 +8,13 @@
     <script src="scripts/loadtime.js" async></script>
     <meta name="keywords" content="Apple Devices, техника Apple, Авито Айфоны">
     <title>Apple Devices</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <link rel="stylesheet" href="css/outlines.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 <body>
 <header class="header">
@@ -26,32 +32,41 @@
 </header>
 <main>
     <section class="main__block">
-        <h2 class="block__title">Наличие Товаров</h2>
-        <div class="table-container">
-            <div class="table">
-                <div class="table__row table__header">
-                    <div class="table__cell">Модель</div>
-                    <div class="table__cell">Цвет и Память</div>
-                    <div class="table__cell">Цена</div>
-                </div>
-                <div class="table__row">
-                    <div class="table__cell">iPhone 15</div>
-                    <div class="table__cell">Black 256GB</div>
-                    <div class="table__cell">79 990 руб.</div>
-                </div>
-                <div class="table__row">
-                    <div class="table__cell">iPhone 15 Pro</div>
-                    <div class="table__cell">Natural Titanium 1TB</div>
-                    <div class="table__cell">169 990 руб.</div>
-                </div>
-                <div class="table__row">
-                    <div class="table__cell">iPhone 15 Pro Max</div>
-                    <div class="table__cell">White Titanium 512GB</div>
-                    <div class="table__cell">129 990 руб.</div>
-                </div>
+        <div class="product-slider">
+            <div class="product-item">
+                <img class="block__img" src="/images/iphone15.png" alt="iPhone 15">
+                <h3>iPhone 15</h3>
+                <p>Цвет и память: Black 256GB</p>
+                <p>Цена: 79 990 руб.</p>
+            </div>
+            <div class="product-item">
+                <img class="block__img" src="/images/iphone15pro.JPG" alt="iPhone 15 Pro">
+                <h3>iPhone 15 Pro</h3>
+                <p>Цвет и память: Natural Titanium 1TB</p>
+                <p>Цена: 169 990 руб.</p>
+            </div>
+            <div class="product-item">
+                <img class="block__img" src="/images/iphone15pm.png" alt="iPhone 15 Pro Max">
+
+                <h3>iPhone 15 Pro Max</h3>
+                <p>Цвет и память: White Titanium 512GB</p>
+                <p>Цена: 129 990 руб.</p>
             </div>
         </div>
     </section>
+    <script>
+        $(document).ready(function(){
+            $('.product-slider').slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                dots: false,
+                arrows: true,
+            });
+        });
+    </script>
 </main>
 <footer><h5 class="footer__text">ИП Демидович Т. А. ОРГНИП 324665800153826</h5></footer>
 </body>
